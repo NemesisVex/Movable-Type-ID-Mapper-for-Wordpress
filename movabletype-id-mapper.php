@@ -2,10 +2,10 @@
 
 /*
   Plugin Name: Movable Type ID Mapper
-  Plugin URI: http://vigilantmedia.com/index.php/projects/
+  Plugin URI: https://bitbucket.org/NemesisVex/movable-type-id-mapper-for-wordpress
   Description: Movable Type ID Mapper looks up an entry from mt_entry by entry_id, then queries Wordpress for a corresponding entry by entry_basename.
   Author: Greg Bueno
-  Version: 0.01
+  Version: 1.0
   Author URI: http://vigilantmedia.com/
  */
 
@@ -16,10 +16,10 @@ if (!class_exists('Movabletype_Id_Mapper')) {
 	 * Movabletype_Id_Mapper
 	 * 
 	 * Movabletype_Id_Mapper maps custom Movable Type URLs to corresponding
-	 * Wordpress entries that have been imported from a Movable Type blog.
+	 * WordPress entries that have been imported from a Movable Type blog.
 	 * The mapper parses a URL for an entry ID, then queries a Movable Type
 	 * mt_entry table for a post. If a post is found, the entry_basename
-	 * field is used to query Wordpress, and a successful match redirects
+	 * field is used to query WordPress, and a successful match redirects
 	 * to that post.
 	 * 
 	 * A theme registers at least one regular expression to the mapper,
@@ -29,7 +29,7 @@ if (!class_exists('Movabletype_Id_Mapper')) {
 	 * as well as all archive, category and author URLs.
 	 * 
 	 * An administrator may specify an external database where Movable Type
-	 * may be hosted. If none is configued, the Wordpress database is used.
+	 * may be hosted. If none is configured, the WordPress database is used.
 	 */
 	class Movabletype_Id_Mapper {
 
